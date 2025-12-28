@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcard Quiz App</title>
+  <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+  <div class="app">
+
+    <div class="card">
+      <p id="question">What is HTML?</p>
+      <p id="answer" class="hidden">HTML is a markup language</p>
+      <button id="showAnswer">Show Answer</button>
+    </div>
+
+    <div class="nav-buttons">
+      <button onclick="prevCard()">Previous</button>
+      <button onclick="nextCard()">Next</button>
+    </div>
+
+    <div class="edit-buttons">
+      <button onclick="editCard()">Edit</button>
+      <button onclick="deleteCard()">Delete</button>
+    </div>
+
+    <h3>Add New Flashcard</h3>
+    <input type="text" id="newQuestion" placeholder="Enter question">
+    <input type="text" id="newAnswer" placeholder="Enter answer">
+    <button onclick="addCard()">Add Card</button>
+
+
+  </div>
+  <script src="task1.js"></script>
+
+</body>
+</html>
